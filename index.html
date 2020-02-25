@@ -1,113 +1,173 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Module-3</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="links">
-        <ul>
-          <li>
-            <a href="#">lifestyle</a>
-          </li>
-          <li>
-            <a href="#">photodiary</a>
-          </li>
-          <li>
-            <a href="#">music</a>
-          </li>
-          <li>
-            <a href="#">travel</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="cards">
-          <div class="card">
-            <img src="images/lifestyle.jpg" alt="lifestyle" class="card_img" />
-            <div class="card-body">
-              <p>Lifestyle</p>
-              <h1>More than just a music festival</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                ipsa distinctio ipsum officiis nesciunt impedit expedita
-                incidunt, non perferendis maiores, sunt eaque, suscipit quis.
-                Quaerat voluptate quidem suscipit ducimus dolorum ex et
-                praesentium veniam distinctio, nemo dolore iure esse. Aperiam
-                totam, dolore saepe quas culpa blanditiis minus voluptatem!
-                Excepturi sequi cupiditate qui voluptatum impedit mollitia,
-                asperiores, numquam minima in quos culpa est inventore ad dolor
-                aut, eligendi explicabo possimus quia?
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/coffee.jpg" alt="cup_of_coffee" class="card_img" />
-            <div class="card-body">
-              <p>Lifestyle</p>
-              <h1>Life tastes better with coffee</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                ipsa distinctio ipsum officiis nesciunt impedit expedita
-                incidunt, non perferendis maiores, sunt eaque, suscipit quis.
-                Quaerat voluptate quidem suscipit ducimus dolorum ex et
-                praesentium veniam distinctio, nemo dolore iure esse. Aperiam
-                totam, dolore saepe quas culpa blanditiis minus voluptatem!
-                Excepturi sequi cupiditate qui voluptatum impedit mollitia,
-                asperiores, numquam minima in quos culpa est inventore ad dolor
-                aut, eligendi explicabo possimus quia?
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/american_dream.jpg" alt="dream" class="card_img" />
-            <div class="card-body">
-              <p>photodiary</p>
-              <h1>American dream</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                ipsa distinctio ipsum officiis nesciunt impedit expedita
-                incidunt, non perferendis maiores, sunt eaque, suscipit quis.
-                Quaerat voluptate quidem suscipit ducimus dolorum ex et
-                praesentium veniam distinctio, nemo dolore iure esse. Aperiam
-                totam, dolore saepe quas culpa blanditiis minus voluptatem!
-                Excepturi sequi cupiditate qui voluptatum impedit mollitia,
-                asperiores, numquam minima in quos culpa est inventore ad dolor
-                aut, eligendi explicabo possimus quia?
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/alps.jpg" alt="alps.jpg" class="card_img" />
-            <div class="card-body">
-              <p>photodiary</p>
-              <h1>A day exploring the Alps</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                ipsa distinctio ipsum officiis nesciunt impedit expedita
-                incidunt, non perferendis maiores, sunt eaque, suscipit quis.
-                Quaerat voluptate quidem suscipit ducimus dolorum ex et
-                praesentium veniam distinctio, nemo dolore iure esse. Aperiam
-                totam, dolore saepe quas culpa blanditiis minus voluptatem!
-                Excepturi sequi cupiditate qui voluptatum impedit mollitia,
-                asperiores, numquam minima in quos culpa est inventore ad dolor
-                aut, eligendi explicabo possimus quia?
-              </p>
-            </div>
-          </div>
+    <div id="wrapper">
+      <header id="header">
+        <div class="container">
+          <nav id="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">lifestyle</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">photodiary</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">music</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">travel</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="wrapper">
-          <button>Load more</button>
-        </div>
-      </section>
-    </main>
+      </header>
+      <main id="main">
+        <section class="section-article">
+          <div class="container">
+            <div class="cards">
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img src="images/lifestyle.jpg" alt="lifestyle" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <a class="category-link" href="#">lifestyle</a>
+                    <h2>
+                      <a href="#">More than just a music festival</a>
+                    </h2>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img src="images/coffee.jpg" alt="coffee" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <a class="category-link" href="#">lifestyle</a>
+                    <h2>
+                      <a href="#">Life tastes better with coffee</a>
+                    </h2>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img src="images/american_dream.jpg" alt="american_dream" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <a class="category-link" href="#">photodiary</a>
+                    <h2>
+                      <a href="#">American dream</a>
+                    </h2>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img src="images/alps.jpg" alt="alps" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <a class="category-link" href="#">photodiary</a>
+                    <h2>
+                      <a href="#">A day exploring the Alps</a>
+                    </h2>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img
+                      src="images/songs_for_running.jpg"
+                      alt="songs-for-running"
+                    />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <a class="category-link" href="#">lifestyle</a>
+                    <h2>
+                      <a href="#">Top 10 songs for running</a>
+                    </h2>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <a href="#">
+                    <img src="images/winter_days.jpg" alt="winter_days" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-header">
+                    <a class="category-link" href="#">lifestyle</a>
+                    <h2>
+                      <a href="#">Cold winter days</a>
+                    </h2>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <button>Load more</button>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
