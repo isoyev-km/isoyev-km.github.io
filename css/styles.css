@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: "OpenSans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Roboto font */
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Open-Sans font */
+@font-face {
+  font-family: "Open-Sans";
+  src: url(fonts/OpenSans-SemiBold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #515151;
+  font-size: 14px;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+#wrapper {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* HEADER SECTION  */
+
+.page-header {
+  max-width: 1170px;
+  margin: 0 15px;
+  padding: 0;
+}
+
+.nav-list {
+  margin-top: 33px;
+}
+
+.site-logo {
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(85, 82, 82);
+  font-weight: normal;
+  margin: 0;
+}
+
+.site-logo::first-letter {
+  color: rgb(26, 188, 156);
+  font-weight: bold;
+}
+
+.site-navigation {
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-top: 10px;
+}
+
+.site-navigation li {
+  float: left;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 37px;
+}
+
+.nav-link {
+  color: rgb(15, 1, 1);
+}
+
+.list-item a:hover {
+  color: #1abc9c;
+}
+
+/* FEATURES SECTION */
+
+h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #515151;
+  margin-top: 93px;
+  font-family: "Roboto-Black", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 32px;
+  padding-bottom: 39px;
+}
+
+h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  content: "";
+  height: 7px;
+  width: 164px;
+  background: #4ec6ab;
+}
+
+img {
+  vertical-align: top;
+  min-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-list {
+  max-width: 1170px;
+  margin: 0 -15px;
+  overflow: hidden;
+  margin-top: 92px;
+}
+
+.card {
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  width: 25%;
+}
+
+.card:hover .card-footer {
+  background: #1abc9c;
+}
+
+.card-img {
+  background: #e9f0fd;
+  height: 282px;
+  position: relative;
+}
+
+.card-img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-footer {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: #323232;
+  height: 40px;
+}
+
+.card-name {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+.card-price {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.44);
+  font-size: 18px;
+  position: relative;
+  top: 25%;
+  margin-top: -0.625em;
+  padding: 11px;
+}
+
+/* LATEST-NEWS SECTION */
+
+.news-header {
+  font-size: 48px;
+  color: #555252;
+  font-weight: bold;
+}
+
+.news-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #555252;
+  text-transform: none;
+}
+
+.news-img {
+  margin-bottom: -10px;
+}
+
+.news-name {
+  position: relative;
+  padding-bottom: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.news-name::after {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translatex(-28%);
+  content: "";
+  height: 3px;
+  width: 136px;
+  background: #4ec6ab;
+}
+
+.latest-news {
+  list-style: none;
+  margin-top: 80px;
+  padding: 0;
+}
+
+.news-list {
+  max-width: 1140px;
+  margin: 0 -15px;
+  overflow: hidden;
+  margin-top: 41px;
+  position: absolute;
+  line-height: 26px;
+  font-size: 14px;
+  color: #555252;
+}
+
+.news-item {
+  position: relative;
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  width: 33.3%;
+}
+
+.button > button {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #f6fbfa;
+  background-color: #4ec6ab;
+  width: 159px;
+  height: 51px;
+  border: 1px;
+  border-radius: 3px;
+}
