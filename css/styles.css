@@ -59,6 +59,7 @@ body {
   color: rgb(85, 82, 82);
   font-weight: normal;
   margin: 0;
+  padding: 0 15px;
 }
 
 .site-logo::first-letter {
