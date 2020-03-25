@@ -226,7 +226,6 @@ body {
 
 .card {
   float: left;
-  /* position: relative; */
 }
 
 .card:hover .card-footer {
@@ -238,16 +237,16 @@ body {
 }
 
 .card:hover .overlay {
-  border: 10px solid #fff;
-  opacity: 55%;
+  border: 10px solid rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .overlay {
   height: 282px;
   width: 255px;
   position: absolute;
-  background-color: #000000;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .icons {
@@ -264,7 +263,7 @@ body {
 
 .icon {
   color: #fff;
-  background-color: #000000;
+  background: transparent;
   border: 1px solid #fff;
   display: inline-block;
   position: relative;
@@ -275,7 +274,6 @@ body {
 
 .icon:hover {
   background-color: #1abc9c;
-  opacity: 100%;
 }
 
 .pe-7s-like {
@@ -307,7 +305,7 @@ body {
 
 .cart {
   color: #fff;
-  background-color: #000000;
+  background-color: #323232;
   border: 1px solid #fff;
   display: inline-block;
   position: relative;
@@ -315,6 +313,10 @@ body {
   height: 50px;
   padding: 0;
   margin-top: 2px;
+}
+
+.cart:hover {
+  background-color: #1abc9c;
 }
 
 .pe-7s-cart {
