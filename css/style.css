@@ -357,6 +357,7 @@ body {
   position: absolute;
   padding-top: 10px;
   padding-left: 14px;
+  color: #fff;
 }
 
 .card-price {
@@ -391,4 +392,5 @@ body {
 
 .designer-name {
   color: #46bfa9;
+  text-decoration: none;
 }
