@@ -1,0 +1,394 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* HEADER SECTION */
+
+.header {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.logo-link {
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #555252;
+  font-size: 30px;
+  transform: translateY(10px);
+}
+
+.logo-link::first-letter {
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+.site-navigation a:hover {
+  color: #1abc9c;
+}
+
+.site-navigation li {
+  display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 32px;
+}
+
+.site-navigation {
+  float: right;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #0f0101;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* SLIDER SECTION */
+
+.slider {
+  width: 1600px;
+  height: 600px;
+  margin-top: 20px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.52);
+}
+
+.slider-box {
+  position: absolute;
+  max-width: 1100px;
+  z-index: 1;
+  top: 225px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 136px;
+}
+
+.slider-button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 0.65;
+}
+
+.slider-button:hover {
+  opacity: 1;
+}
+
+.pe-7s-angle-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 104px;
+  width: 104px;
+  color: #fff;
+  background-color: #1abc9c;
+}
+
+.pe-7s-angle-left:before {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.pe-7s-angle-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 104px;
+  width: 104px;
+  color: #fff;
+  background-color: #1abc9c;
+}
+
+.pe-7s-angle-right::before {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.slider-content {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  width: 744px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -12px;
+}
+
+.slider-content h2 {
+  font-size: 55px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-left: 30px;
+  letter-spacing: -1px;
+}
+
+.slider-content p {
+  position: absolute;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-left: 30px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+/* CARDS SECTION */
+
+.new-collection {
+  padding-bottom: 96px;
+  background-color: #e9f0fd;
+}
+
+.collection-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-bottom: 65px;
+  margin-top: 0;
+  padding-top: 94px;
+}
+
+.collection-header::after {
+  content: "";
+  background-color: #1abc9c;
+  width: 165px;
+  height: 7px;
+  display: block;
+  margin-top: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collection-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.card-list {
+  width: 1110px;
+}
+
+.card {
+  float: left;
+  /* position: relative; */
+}
+
+.card:hover .card-footer {
+  background-color: #1abc9c;
+}
+
+.card:not(:last-child) {
+  padding-right: 30px;
+}
+
+.card:hover .overlay {
+  border: 10px solid #fff;
+  opacity: 55%;
+}
+
+.overlay {
+  height: 282px;
+  width: 255px;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0;
+}
+
+.icons {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  height: 107px;
+  width: 166px;
+  text-align: center;
+}
+
+.icon {
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #fff;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.icon:hover {
+  background-color: #1abc9c;
+  opacity: 100%;
+}
+
+.pe-7s-like {
+  font-size: 30px;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pe-7s-shuffle {
+  font-size: 30px;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pe-7s-clock {
+  font-size: 30px;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cart {
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #fff;
+  display: inline-block;
+  position: relative;
+  width: 166px;
+  height: 50px;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.pe-7s-cart {
+  width: 166px;
+  height: 50px;
+  font-size: 30px;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pe-7s-cart::before {
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+.cart-add {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-footer {
+  overflow: hidden;
+  color: #fff;
+  background: #323232;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  max-width: 255px;
+  margin-right: 0;
+}
+
+.card-name {
+  text-decoration: none;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+
+.card-price {
+  float: right;
+  width: 54px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* FOOTER-SECTION */
+
+.footer-box {
+  margin: 0;
+  position: relative;
+  height: 88px;
+  background-color: #323232;
+}
+
+.footer-content {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  color: #fefefe;
+  font-weight: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.designer-name {
+  color: #46bfa9;
+}
