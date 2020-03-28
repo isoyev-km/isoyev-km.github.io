@@ -3,8 +3,8 @@ html {
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -21,6 +21,7 @@ body {
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* HEADER SECTION */
@@ -82,7 +83,6 @@ body {
 /* SLIDER SECTION */
 
 .slider {
-  width: 1600px;
   height: 600px;
   margin-top: 20px;
   position: relative;
