@@ -5,183 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div id="wrapper">
       <header class="header">
-        <nav class="navigation">
-          <a href="#" class="site-logo">MoGo</a>
-          <ul class="site-navigation">
-            <li class="list-item">
-              <a href="#" class="nav-link">about</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">service</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">work</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">blog</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">contact</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container">
+          <nav class="navigation">
+            <a href="#" class="logo">golden</a>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="">services</a>
+              </li>
+              <li class="nav-item">
+                <a href="">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <main class="main">
-        <section class="services">
-          <h2 class="header-top">We work with</h2>
-          <h2 class="header-bottom">amazing services</h2>
-          <ul class="services-list">
-            <li class="services-item icon-clock">
-              <h3>photography</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </li>
-            <li class="services-item icon-graph">
-              <h3>web design</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </li>
-            <li class="services-item icon-computer">
-              <h3>creativity</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </li>
-            <li class="services-item icon-book">
-              <h3>seo</h3>
-              <p>
-                Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
-              </p>
-            </li>
-            <li class="services-item icon-house">
-              <h3>css/html</h3>
-              <p>
-                Lorem dolor sit amet, consectetur adipiscing elit, sed do
-                tempor.
-              </p>
-            </li>
-            <li class="services-item icon-box">
-              <h3>digital</h3>
-              <p>
-                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="team">
+      <main id="main">
+        <section class="section">
           <div class="container">
-            <div class="section-header">
-              <h2 class="header-top">Who we are</h2>
-              <h2 class="header-bottom">meet our team</h2>
-              <div class="team-info">
+            <h2 class="header-top">services</h2>
+            <p class="header-bottom">Proin iaculis purus consequat sem cure.</p>
+            <ul class="services-list">
+              <li class="services-item commerce">
+                <h3>E-Commerce</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
                 </p>
-              </div>
-            </div>
-            <div class="team-members">
-              <div class="team-member">
-                <div class="member-img">
-                  <div class="overlay">
-                    <a href="#" class="link"
-                      ><img src="/img/socials/facebook.png" alt="facebook"
-                    /></a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/twitter.png" alt="twitter" />
-                    </a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/instagram.png" alt="instagram" />
-                    </a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/pinterest.png" alt="pinterest" />
-                    </a>
+              </li>
+              <li class="services-item responsive">
+                <h3>Responsive Web</h3>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </li>
+              <li class="services-item security">
+                <h3>Web Security</h3>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section contact">
+          <div class="container contact-us">
+            <h2 class="header-top">contact us</h2>
+            <p class="header-bottom">Proin iaculis purus consequat sem cure.</p>
+            <form action="#">
+              <fieldset>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" placeholder="your name *" />
+                    <input type="email" placeholder="your email *" />
+                    <input type="text" placeholder="subject" />
                   </div>
-                  <img src="/img/team/matt.jpg" alt="matthew-dix" />
-                </div>
-                <h3 class="member-name">matthew dix</h3>
-                <p class="member-occupation">Graphic Design</p>
-              </div>
-              <div class="team-member">
-                <div class="member-img">
-                  <div class="overlay">
-                    <a href="#" class="link"
-                      ><img src="/img/socials/facebook.png" alt="facebook"
-                    /></a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/twitter.png" alt="twitter" />
-                    </a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/instagram.png" alt="instagram" />
-                    </a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/pinterest.png" alt="pinterest" />
-                    </a>
+                  <div class="col">
+                    <textarea placeholder="your message *"></textarea>
                   </div>
-                  <img
-                    src="/img/team/christopher.jpg"
-                    alt="christopher-campbell"
-                  />
                 </div>
-                <h3 class="member-name">christopher campbell</h3>
-                <p class="member-occupation">Branding/UX design</p>
-              </div>
-              <div class="team-member">
-                <div class="member-img">
-                  <div class="overlay">
-                    <a href="#" class="link"
-                      ><img src="/img/socials/facebook.png" alt="facebook"
-                    /></a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/twitter.png" alt="twitter" />
-                    </a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/instagram.png" alt="instagram" />
-                    </a>
-                    <a href="#" class="link">
-                      <img src="/img/socials/pinterest.png" alt="pinterest" />
-                    </a>
-                  </div>
-                  <img src="/img/team/michael.jpg" alt="michael-fertig" />
+                <div class="btn-box">
+                  <button type="submit">send message</button>
                 </div>
-                <h3 class="member-name">michael fertig</h3>
-                <p class="member-occupation">Developer</p>
-              </div>
-            </div>
+              </fieldset>
+            </form>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-box">
-            <p>
-              &#169; 2016 MoGo free PSD template by
-              <a href="#" class="author">Laaqiq</a>
-            </p>
-          </div>
-          <form action="#" method="get">
-            <input type="email" name="main" placeholder="Your Email..." />
-            <input type="submit" value="subscribe" />
-          </form>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
