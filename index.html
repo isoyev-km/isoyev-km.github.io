@@ -4,94 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="wrapper">
-      <header class="header">
+      <div id="header">
         <div class="container">
-          <nav class="navigation">
-            <a href="#" class="logo">golden</a>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#">home</a>
-              </li>
-              <li class="nav-item">
-                <a href="">services</a>
-              </li>
-              <li class="nav-item">
-                <a href="">portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="">about</a>
-              </li>
-              <li class="nav-item">
-                <a href="">contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main id="main">
-        <section class="section">
-          <div class="container">
-            <h2 class="header-top">services</h2>
-            <p class="header-bottom">Proin iaculis purus consequat sem cure.</p>
-            <ul class="services-list">
-              <li class="services-item commerce">
-                <h3>E-Commerce</h3>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim. Donec
-                  porttitora entum suscipit aenean rhoncus posuere odio in
-                  tincidunt.
-                </p>
-              </li>
-              <li class="services-item responsive">
-                <h3>Responsive Web</h3>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim. Donec
-                  porttitora entum suscipit aenean rhoncus posuere odio in
-                  tincidunt.
-                </p>
-              </li>
-              <li class="services-item security">
-                <h3>Web Security</h3>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim. Donec
-                  porttitora entum suscipit aenean rhoncus posuere odio in
-                  tincidunt.
-                </p>
-              </li>
-            </ul>
+          <div class="header-row">
+            <div class="logo">
+              <a href="#">Urlaubsglück</a>
+            </div>
+            <div class="user-box">
+              <button class="authorization">
+                <a href="#">Login</a>
+              </button>
+              <button class="authorization">
+                <a href="#">Sign up</a>
+              </button>
+            </div>
           </div>
-        </section>
-        <section class="section contact">
-          <div class="container contact-us">
-            <h2 class="header-top">contact us</h2>
-            <p class="header-bottom">Proin iaculis purus consequat sem cure.</p>
-            <form action="#">
-              <fieldset>
-                <div class="row">
-                  <div class="col">
-                    <input type="text" placeholder="your name *" name="name" />
-                    <input
-                      type="email"
-                      placeholder="your email *"
-                      required="true"
-                      name="email"
-                    />
-                    <input type="text" placeholder="subject" />
-                  </div>
-                  <div class="col">
-                    <textarea placeholder="your message *"></textarea>
-                  </div>
+          <div class="title">
+            <h1 class="header-text">Share your holiday dreams</h1>
+            <h3 class="title-text">
+              And find the perfect partner to fullfill it
+            </h3>
+            <button class="find-partner">Find your holiday partner</button>
+          </div>
+        </div>
+      </div>
+      <main id="main">
+        <section class="banner"></section>
+        <section class="section-main">
+          <div class="container partners">
+            <h2 class="main-title">Meet a partner for your best holiday</h2>
+            <ul class="partner-list">
+              <li class="partner-item">
+                <div class="img-photo bradley">
+                  <img src="img/bradley.png" alt="" class="partner-img" />
                 </div>
-                <div class="btn-box">
-                  <button type="submit">send message</button>
+                <h2 class="name">Bradley Hunter</h2>
+                <p class="about">
+                  Based in Chicago. I love playing tennis and loud music.
+                </p>
+              </li>
+              <li class="partner-item">
+                <div class="img-photo lucas">
+                  <img src="img/lucas.png" alt="" class="partner-img" />
                 </div>
-              </fieldset>
-            </form>
+                <h2 class="name">Lucas Marsha</h2>
+                <p class="about">
+                  I get my inspiration from nature and objects around me. I have
+                  a passion to colours, typography and skateboards.
+                </p>
+              </li>
+              <li class="partner-item">
+                <div class="img-photo heather">
+                  <img src="img/heather.png" alt="" class="partner-img" />
+                </div>
+                <h2 class="name">Heather Walker</h2>
+                <p class="about">
+                  I`am happy person that loves cats and climbing on mountains
+                </p>
+              </li>
+              <li class="partner-item">
+                <div class="img-photo bradley-girl">
+                  <img src="img/bradley1.png" alt="" class="partner-img" />
+                </div>
+                <h2 class="name">Bradley Hunter</h2>
+                <p class="about">
+                  Based in Chicago. I love playing tennis and loud music.
+                </p>
+              </li>
+            </ul>
+            <button class="button">See other partners</button>
           </div>
         </section>
       </main>
