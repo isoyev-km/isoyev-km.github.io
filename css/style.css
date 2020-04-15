@@ -58,10 +58,6 @@ body {
   color: #ffffff;
 }
 
-.authorization a {
-  color: #ffffff;
-}
-
 .authorization:hover {
   border: 2px solid #ffffff;
   border-radius: 20px;
